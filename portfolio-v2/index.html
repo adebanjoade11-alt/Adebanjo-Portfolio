@@ -149,7 +149,9 @@ a:hover { color: var(--red); }
 .facts li { display: grid; grid-template-columns: 8.5em minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 16.5px; line-height: 1.5; }
 .facts .k { font-family: var(--data); font-size: 12.5px; color: var(--ink-2); padding-top: 3px; }
 .disc figure { margin: 26px 0 0; }
-.disc figure img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: saturate(0.85) contrast(1.04); }
+.disc .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 26px; }
+.disc .pair figure { margin: 0; }
+.disc figure img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; filter: saturate(0.85) contrast(1.04); }
 .disc figcaption { font-family: var(--data); font-size: 12.5px; color: var(--ink-2); padding-top: 10px; line-height: 1.45; }
 .systems { max-width: 400px; margin: 28px 0 0; background: #fbfaf6; border: 1px solid var(--rule); padding: 16px 16px 10px; }
 .systems svg { width: 100%; height: auto; }
@@ -441,8 +443,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 
     <div class="strip">
       <figure>
-        <img src="img/live-line-work-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Two workers using a red insulated telescopic pole on an overhead line beside a road">
-        <figcaption>Conductor work from the roadside, beside a concrete H-pole.</figcaption>
+        <img src="img/steel-gantries-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="A row of galvanised steel gantry structures carrying strain insulators, with red, yellow and blue cable terminations and cables run down each leg">
+        <figcaption>Steel gantries with three-phase cable terminations, cables dressed down each leg.</figcaption>
       </figure>
       <figure>
         <img src="img/vcb-three-phase-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Three-phase vacuum circuit breaker with red, green and yellow phase markers awaiting installation">
@@ -478,10 +480,16 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
           <li><span class="k">Capital project</span><span>~2 MW rooftop and ground-mount solar PV with lithium-ion battery storage for a UK campus (MSc, 2025–26)</span></li>
           <li><span class="k">Site safety</span><span>Permit to work, risk assessments and method statements, toolbox talks, LOTO and hazard control</span></li>
         </ul>
-        <figure>
-          <img src="img/transformer-plinth-t.webp" width="429" height="620" loading="lazy" decoding="async" alt="New oil-immersed distribution transformer standing on a concrete plinth with structure work behind">
-          <figcaption>Transformer set and levelled on its plinth while the support structure goes up behind it.</figcaption>
-        </figure>
+        <div class="pair">
+          <figure>
+            <img src="img/transformer-400kva-t.webp" width="471" height="620" loading="lazy" decoding="async" alt="A 400 kVA distribution transformer on a new concrete plinth between two concrete poles, drop-out fuses on the crossarm above and a brick bund being built around the base">
+            <figcaption>400 kVA transformer on a new plinth, bund walls going up.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/cable-termination-t.webp" width="480" height="620" loading="lazy" decoding="async" alt="A technician in overalls using a gas torch to shrink a red heat-shrink cable termination onto three cable cores">
+            <figcaption>Heat-shrink termination on a power cable, made off by torch.</figcaption>
+          </figure>
+        </div>
       </div>
 
       <div class="disc it">
@@ -758,6 +766,15 @@ var PLATES = [
   {f:"pole-substation-complete", w:429, h:620, crop:true, t:"Substation ready for energisation",
    d:"Breaker on a fabricated steel stand, structure dressed, ladders still in place: the state a site should be in before the paperwork closes and the switching instruction goes out.",
    alt:"Completed pole-mounted substation with a circuit breaker on a red steel stand and ladders in place"},
+  {f:"steel-gantries", w:465, h:620, t:"Steel gantries and cable terminations",
+   d:"A run of galvanised steel gantries carrying strain insulators, with each circuit brought down through three-phase cable terminations and the cables dressed down the legs to ground.",
+   alt:"A row of galvanised steel gantry structures carrying strain insulators, with red, yellow and blue cable terminations and cables run down each leg"},
+  {f:"transformer-400kva", w:471, h:620, t:"400 kVA transformer on a new plinth",
+   d:"A 400 kVA distribution transformer set on its concrete plinth between two poles, drop-out fuses on the crossarm above, with the brick bund still being built around the base.",
+   alt:"A 400 kVA distribution transformer on a new concrete plinth between two concrete poles, drop-out fuses on the crossarm above and a brick bund being built around the base"},
+  {f:"cable-termination", w:480, h:620, t:"Heat-shrink cable termination",
+   d:"Making off a power cable with a heat-shrink termination: the torch shrinks the breakout and tubes onto each core so the seal is complete before the cable is connected.",
+   alt:"A technician in overalls using a gas torch to shrink a red heat-shrink cable termination onto three cable cores"},
   {f:"lv-panel-meters", w:465, h:620, t:"LV distribution panel and metering",
    d:"Copper busbars, phase-coloured links and metering inside an LV distribution panel, where losses, revenue and load balance are all read off the same board.",
    alt:"Interior of a low-voltage distribution panel showing copper busbars, phase-coloured links and two energy meters"}
