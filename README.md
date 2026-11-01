@@ -1,10 +1,10 @@
 Adeyemi Sakiru Adebanjo – Project Portfolio
 
 Sheffield, United Kingdom · MSc Project Management (Level 7)
-18 years in electrical distribution engineering, operations & maintenance, incident management, and capital project delivery.
+24 years in electrical distribution engineering, operations & maintenance, incident management, and capital project delivery.
 
 Professional Summary
-Operations & Maintenance Supervisor and Project Lead with 18 years of experience delivering electrical infrastructure across Nigeria’s electricity distribution sector (11kV and 33kV networks). Experienced from survey and procurement through construction, commissioning, and live operation.
+Operations & Maintenance Supervisor and Project Lead with 24 years of experience delivering electrical infrastructure across Nigeria’s electricity distribution sector (11kV and 33kV networks). Experienced from survey and procurement through construction, commissioning, and live operation.
 
 Practised in grid operations, capital project execution, incident management, transformer installation, and technical loss reduction. Completed an MSc in Project Management at Sheffield Hallam University in 2026, with Level 7 work in risk management, investment appraisal, and project governance.
 
