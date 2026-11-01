@@ -32,4 +32,4 @@ An engineer's drawing set. Three ideas combined at the owner's request:
 - Graphics are authored SVG geometry (diagrams, charts), never imitation pictures. Illustrative charts say so in the caption.
 - One animation: the hero diagram energises (lines draw in, then current flows). Off under reduced motion.
 - No eyebrow labels above headings; the breaker symbol does that job.
-- Photos: `img/<name>-t.webp` thumbnails, `img/<name>.webp` full size. `pole-substation-complete` is cropped (`.wm-crop`) to hide a camera watermark.
+- Photos: `img/<name>-t.webp` thumbnails, `img/<name>.webp` full size. Camera watermarks are cropped out of the files themselves, not hidden with CSS.

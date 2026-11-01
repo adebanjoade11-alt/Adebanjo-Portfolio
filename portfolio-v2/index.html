@@ -219,7 +219,6 @@ a:hover { color: var(--red); }
 .plate .t { font-family: var(--display); font-weight: 700; font-stretch: 88%; font-size: 17px; line-height: 1.2; }
 .plate .d { font-size: 15px; line-height: 1.45; color: var(--ink-2); margin-top: 6px; }
 .plate:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
-img.wm-crop { aspect-ratio: 429 / 564; object-fit: cover; object-position: center top; }
 
 .lightbox { position: fixed; inset: 0; z-index: 200; background: rgba(19, 33, 58, 0.97); color: var(--paper); display: flex; flex-direction: column; padding: calc(env(safe-area-inset-top, 0px) + 14px) 14px calc(env(safe-area-inset-bottom, 0px) + 14px); }
 .lightbox[hidden] { display: none; }
@@ -231,7 +230,6 @@ img.wm-crop { aspect-ratio: 429 / 564; object-fit: cover; object-position: cente
 .lb-btn:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
 .lb-stage { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 14px 0; }
 .lb-stage img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
-.lb-stage img.wm-crop { aspect-ratio: auto; clip-path: inset(0 0 9.5% 0); }
 .lb-cap { max-width: 46em; margin: 0 auto; text-align: center; }
 .lb-cap .t { font-family: var(--display); font-weight: 700; font-size: 18px; }
 .lb-cap .d { font-size: 15.5px; opacity: 0.85; margin-top: 4px; }
@@ -447,11 +445,11 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         <figcaption>Steel gantries with three-phase cable terminations, cables dressed down each leg.</figcaption>
       </figure>
       <figure>
-        <img src="img/vcb-three-phase-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Three-phase vacuum circuit breaker with red, green and yellow phase markers awaiting installation">
+        <img src="img/vcb-three-phase-t.webp" width="364" height="485" loading="lazy" decoding="async" alt="Three-phase vacuum circuit breaker with red, green and yellow phase markers awaiting installation">
         <figcaption>Vacuum circuit breaker, phases marked before installation.</figcaption>
       </figure>
       <figure>
-        <img src="img/lv-panel-meters-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Interior of a low-voltage distribution panel showing copper busbars, phase-coloured links and two energy meters">
+        <img src="img/lv-panel-meters-t.webp" width="363" height="484" loading="lazy" decoding="async" alt="Interior of a low-voltage distribution panel showing copper busbars, phase-coloured links and two energy meters">
         <figcaption>LV distribution panel: losses, revenue and load balance on one board.</figcaption>
       </figure>
     </div>
@@ -739,31 +737,31 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 
 <script>
 var PLATES = [
-  {f:"lattice-pole", w:465, h:620, t:"Steel lattice intermediate structure",
+  {f:"lattice-pole", w:363, h:428, t:"Steel lattice intermediate structure",
    d:"A braced lattice pole carrying pin and strain insulators on an overhead distribution line, with stay-supported angle deviation on both approaches.",
    alt:"Steel lattice pole carrying overhead distribution conductors against a cloudy sky"},
-  {f:"h-pole-substation", w:620, h:620, t:"H-pole distribution substation",
+  {f:"h-pole-substation", w:363, h:364, t:"H-pole distribution substation",
    d:"Drop-out fuses over disconnects over a pole-mounted transformer: the whole step-down arrangement on one structure, which is how most of the network reaches its customers.",
    alt:"H-pole structure carrying drop-out fuses, disconnects and a pole-mounted transformer"},
-  {f:"breaker-gas-site", w:620, h:465, t:"Outdoor breaker at an industrial intake",
+  {f:"breaker-gas-site", w:363, h:272, t:"Outdoor breaker at an industrial intake",
    d:"Pole-mounted circuit breaker and surge arresters serving an industrial site. The green line in the foreground is a high-pressure gas main, which sets the clearances and the permit conditions for any work here.",
    alt:"Pole-mounted outdoor circuit breaker beside a high-pressure gas pipeline at an industrial site"},
-  {f:"live-line-work", w:465, h:620, t:"Conductor work from the roadside",
+  {f:"live-line-work", w:363, h:484, t:"Conductor work from the roadside",
    d:"Crew working a conductor with an insulated telescopic pole beside a concrete H-pole: traffic on one side, live conductors overhead, which is why site control is written down before anyone starts.",
    alt:"Two workers using a red insulated telescopic pole on an overhead line beside a road"},
-  {f:"field-team-earthing", w:465, h:620, t:"Set-up before the work starts",
+  {f:"field-team-earthing", w:364, h:485, t:"Set-up before the work starts",
    d:"Earthing set, operating rod, cable and polymer insulators laid out on site. The unglamorous quarter-hour that decides whether the rest of the job is safe.",
    alt:"Field team with earthing equipment, cable and polymer insulators laid out at a roadside work site"},
-  {f:"vcb-three-phase", w:465, h:620, t:"Three-phase breaker, phases marked",
+  {f:"vcb-three-phase", w:364, h:485, t:"Three-phase breaker, phases marked",
    d:"A vacuum circuit breaker with its phase identity marked at the terminals and on the tank, checked before installation. Phase errors are cheap to prevent and expensive to find later.",
    alt:"Three-phase vacuum circuit breaker with red, green and yellow phase markers awaiting installation"},
-  {f:"insulator-assembly", w:349, h:620, t:"Gang-operated switches on the ground",
+  {f:"insulator-assembly", w:364, h:645, t:"Gang-operated switches on the ground",
    d:"Disconnect switches and polymeric insulators assembled and adjusted at ground level before they go up. Setting the linkage here saves an hour of work at height.",
    alt:"Gang-operated disconnect switches and polymeric insulators being assembled on the ground"},
-  {f:"transformer-plinth", w:429, h:620, t:"New transformer on its plinth",
+  {f:"transformer-plinth", w:363, h:484, t:"New transformer on its plinth",
    d:"An oil-immersed distribution transformer set and levelled on its plinth with the conservator fitted, while the support structure and switching are erected behind it.",
    alt:"New oil-immersed distribution transformer standing on a concrete plinth with structure work behind"},
-  {f:"pole-substation-complete", w:429, h:620, crop:true, t:"Substation ready for energisation",
+  {f:"pole-substation-complete", w:363, h:484, t:"Substation ready for energisation",
    d:"Breaker on a fabricated steel stand, structure dressed, ladders still in place: the state a site should be in before the paperwork closes and the switching instruction goes out.",
    alt:"Completed pole-mounted substation with a circuit breaker on a red steel stand and ladders in place"},
   {f:"steel-gantries", w:465, h:620, t:"Steel gantries and cable terminations",
@@ -775,7 +773,7 @@ var PLATES = [
   {f:"cable-termination", w:480, h:620, t:"Heat-shrink cable termination",
    d:"Making off a power cable with a heat-shrink termination: the torch shrinks the breakout and tubes onto each core so the seal is complete before the cable is connected.",
    alt:"A technician in overalls using a gas torch to shrink a red heat-shrink cable termination onto three cable cores"},
-  {f:"lv-panel-meters", w:465, h:620, t:"LV distribution panel and metering",
+  {f:"lv-panel-meters", w:363, h:484, t:"LV distribution panel and metering",
    d:"Copper busbars, phase-coloured links and metering inside an LV distribution panel, where losses, revenue and load balance are all read off the same board.",
    alt:"Interior of a low-voltage distribution panel showing copper busbars, phase-coloured links and two energy meters"}
 ];
@@ -793,7 +791,6 @@ PLATES.forEach(function(p, i){
   img.width = p.w; img.height = p.h;
   img.loading = 'lazy'; img.decoding = 'async';
   img.alt = p.alt;
-  if (p.crop) img.className = 'wm-crop';
   var cap = document.createElement('div');
   cap.className = 'cap';
   cap.innerHTML = '<div class="t"></div><div class="d"></div>';
@@ -824,7 +821,6 @@ function open(i){
   var p = PLATES[cur];
   lbImg.src = 'img/' + p.f + '.webp';
   lbImg.alt = p.alt;
-  lbImg.classList.toggle('wm-crop', !!p.crop);
   lbT.textContent = p.t;
   lbD.textContent = p.d;
   lbN.textContent = 'Photograph ' + (cur + 1) + ' of ' + PLATES.length;
