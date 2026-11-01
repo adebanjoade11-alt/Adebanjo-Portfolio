@@ -6,7 +6,7 @@ Sheffield, United Kingdom · MSc Project Management (Level 7)
 Professional Summary
 Operations & Maintenance Supervisor and Project Lead with 18 years of experience delivering electrical infrastructure across Nigeria’s electricity distribution sector (11kV and 33kV networks). Experienced from survey and procurement through construction, commissioning, and live operation.
 
-Practised in grid operations, capital project execution, incident management, transformer installation, and technical loss reduction. Currently completing an MSc in Project Management at Sheffield Hallam University, with Level 7 work in risk management, investment appraisal, and project governance.
+Practised in grid operations, capital project execution, incident management, transformer installation, and technical loss reduction. Completed an MSc in Project Management at Sheffield Hallam University in 2026, with Level 7 work in risk management, investment appraisal, and project governance.
 
 Combines field engineering judgement with structured planning, quantitative analysis, and stakeholder engagement across regulated environments in Nigeria and the UK.
 
