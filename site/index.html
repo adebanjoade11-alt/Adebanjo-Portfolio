@@ -28,7 +28,7 @@ a { color: inherit; }
 
 .mark .initials { font-family: var(--display); font-weight: 800; font-size: 21px; letter-spacing: 0.06em; color: var(--signal); }
 
-.mark .who { font-family: var(--code); font-size: 11px; letter-spacing: 0.17em; text-transform: uppercase; color: var(--dust); }
+.mark .who { font-family: var(--code); font-size: 12px; letter-spacing: 0.17em; text-transform: uppercase; color: var(--dust); }
 
 nav { display: flex; gap: 4px; flex-wrap: wrap; }
 
@@ -46,9 +46,11 @@ nav a:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
 
 .sheet-head { padding-block: 54px 34px; border-bottom: 1px solid var(--edge); }
 
-.plate-no { font-family: var(--code); font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--signal); margin-bottom: 16px; }
+.plate-no { font-family: var(--code); font-size: 12.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--signal); margin-bottom: 16px; }
 
 h1 { font-family: var(--display); font-weight: 800; font-size: clamp(46px, 9vw, 104px); line-height: 0.92; letter-spacing: -0.005em; margin: 0px; text-transform: uppercase; text-wrap: balance; }
+
+h1[tabindex="-1"]:focus { outline: none; }
 
 h1 .thin { font-weight: 500; color: var(--dust); display: block; }
 
@@ -66,7 +68,7 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .band-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 34px; }
 
-.band-head .note { font-family: var(--code); font-size: 11px; letter-spacing: 0.17em; text-transform: uppercase; color: var(--dust); }
+.band-head .note { font-family: var(--code); font-size: 12px; letter-spacing: 0.17em; text-transform: uppercase; color: var(--dust); }
 
 .ticker { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--edge); margin-top: 44px; }
 
@@ -78,7 +80,7 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .tick .v i { font-style: normal; color: var(--signal); font-size: 0.46em; margin-left: 3px; }
 
-.tick .k { font-family: var(--code); font-size: 11px; letter-spacing: 0.09em; color: var(--dust); margin-top: 10px; line-height: 1.4; }
+.tick .k { font-family: var(--code); font-size: 12px; letter-spacing: 0.09em; color: var(--dust); margin-top: 10px; line-height: 1.4; }
 
 .projects { display: grid; gap: 2px; background: var(--edge); border: 1px solid var(--edge); }
 
@@ -92,11 +94,11 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .pshot img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.72) contrast(1.06); }
 
-.pshot .idx { position: absolute; top: 0px; left: 0px; background: var(--signal); color: var(--void); font-family: var(--code); font-size: 11px; font-weight: 500; letter-spacing: 0.1em; padding: 5px 9px; }
+.pshot .idx { position: absolute; top: 0px; left: 0px; background: var(--signal); color: var(--void); font-family: var(--code); font-size: 12px; font-weight: 500; letter-spacing: 0.1em; padding: 5px 9px; }
 
 .pbody { padding: 30px 32px; min-width: 0px; display: flex; flex-direction: column; justify-content: center; }
 
-.pbody .kicker { font-family: var(--code); font-size: 10.5px; letter-spacing: 0.19em; text-transform: uppercase; color: var(--signal); margin-bottom: 11px; }
+.pbody .kicker { font-family: var(--code); font-size: 12px; letter-spacing: 0.19em; text-transform: uppercase; color: var(--signal); margin-bottom: 11px; }
 
 .pbody h3 { font-size: 24px; }
 
@@ -104,7 +106,7 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .facts { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
 
-.facts span { font-family: var(--code); font-size: 11px; letter-spacing: 0.05em; border: 1px solid var(--edge); padding: 5px 9px; color: var(--dust); }
+.facts span { font-family: var(--code); font-size: 12px; letter-spacing: 0.05em; border: 1px solid var(--edge); padding: 5px 9px; color: var(--dust); }
 
 .contact-strip { margin-top: 40px; display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -126,9 +128,15 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .plate:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
 
+.pshot img.wm-crop { transform: scale(1.1); transform-origin: center top; }
+
+.plate img.wm-crop { aspect-ratio: 429 / 564; object-fit: cover; object-position: center top; }
+
+.lb-stage img.wm-crop { clip-path: inset(0 0 9.5% 0); }
+
 .cap { padding: 13px 15px 15px; border-top: 1px solid var(--edge); }
 
-.cap .n { font-family: var(--code); font-size: 10.5px; letter-spacing: 0.14em; color: var(--signal); }
+.cap .n { font-family: var(--code); font-size: 12px; letter-spacing: 0.14em; color: var(--signal); }
 
 .cap .t { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; font-size: 16.5px; margin-top: 6px; line-height: 1.2; }
 
@@ -140,7 +148,7 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .lb-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 12px; }
 
-.lb-bar .lb-n { font-family: var(--code); font-size: 11.5px; letter-spacing: 0.15em; color: var(--signal); }
+.lb-bar .lb-n { font-family: var(--code); font-size: 12.5px; letter-spacing: 0.15em; color: var(--signal); }
 
 .lb-controls { display: flex; gap: 8px; }
 
@@ -170,7 +178,7 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .prose em { color: var(--chalk); font-style: italic; }
 
-.sidebar h3 { font-size: 17px; color: var(--signal); margin-bottom: 14px; }
+.sidebar h2 { font-weight: 600; letter-spacing: 0.03em; line-height: inherit; font-size: 17px; color: var(--signal); margin-bottom: 14px; }
 
 .sidebar + .sidebar { margin-top: 36px; }
 
@@ -180,7 +188,7 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .tl li:first-child { border-top: 0px; }
 
-.tl .yr { font-family: var(--code); font-size: 11.5px; color: var(--dust); font-variant-numeric: tabular-nums; padding-top: 3px; }
+.tl .yr { font-family: var(--code); font-size: 12.5px; color: var(--dust); font-variant-numeric: tabular-nums; padding-top: 3px; }
 
 .tl .rl { min-width: 0px; }
 
@@ -202,13 +210,19 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 .row { min-width: 0px; }
 
-.row .k { font-family: var(--code); font-size: 10.5px; letter-spacing: 0.19em; text-transform: uppercase; color: var(--signal); }
+.row .k { font-family: var(--code); font-size: 12px; letter-spacing: 0.19em; text-transform: uppercase; color: var(--signal); }
 
 .row .v { font-family: var(--display); font-size: 24px; font-weight: 600; margin-top: 5px; word-break: break-word; user-select: all; letter-spacing: 0.01em; }
 
+.row .v a { color: inherit; text-decoration: underline; text-decoration-color: var(--edge); text-decoration-thickness: 1px; text-underline-offset: 0.16em; transition: color 0.15s, text-decoration-color 0.15s; }
+
+.row .v a:hover { color: var(--signal); text-decoration-color: var(--signal); }
+
+.row .v a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+
 .row .sub { font-size: 14px; color: var(--dust); margin-top: 5px; }
 
-.mini { margin-top: 9px; background: none; border: 1px solid var(--edge); color: var(--dust); font-family: var(--code); font-size: 10.5px; letter-spacing: 0.13em; text-transform: uppercase; padding: 6px 10px; cursor: pointer; }
+.mini { margin-top: 9px; background: none; border: 1px solid var(--edge); color: var(--dust); font-family: var(--code); font-size: 12px; letter-spacing: 0.13em; text-transform: uppercase; padding: 6px 10px; cursor: pointer; }
 
 .mini:hover { border-color: var(--signal); color: var(--signal); }
 
@@ -219,7 +233,7 @@ h3 { font-family: var(--display); font-weight: 600; text-transform: uppercase; l
 
 
 
-footer { border-top: 1px solid var(--edge); padding-block: 26px 46px; font-family: var(--code); font-size: 11px; letter-spacing: 0.09em; color: var(--dust); display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; text-transform: uppercase; }
+footer { border-top: 1px solid var(--edge); padding-block: 26px 46px; font-family: var(--code); font-size: 12px; letter-spacing: 0.09em; color: var(--dust); display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; text-transform: uppercase; }
 
 @media (max-width: 960px) {
   .grid { columns: 2; }
@@ -320,7 +334,7 @@ html { text-size-adjust: 100%; }
   <div class="shell">
     <div class="sheet-head">
       <div class="plate-no">Sheet 01 — Practice</div>
-      <h1>Keeping the<br>power on<span class="thin">and the projects moving</span></h1>
+      <h1 tabindex="-1">Keeping the<br>power on<span class="thin">and the projects moving</span></h1>
       <p class="standfirst">Eighteen years of project delivery, operations and maintenance, and incident response on electricity distribution networks.</p>
       <p class="body">I spent eleven years on a Nigerian distribution network holding three things at once: the maintenance programme that kept assets available, the response when the network failed at two in the morning, and the capital projects that upgraded it. Now in Sheffield, MSc in Project Management completed at Sheffield Hallam, and working toward delivery roles in UK utilities and infrastructure.</p>
       <div class="contact-strip">
@@ -330,8 +344,8 @@ html { text-size-adjust: 100%; }
       <div class="ticker">
         <div class="tick"><div class="v">18<i>yrs</i></div><div class="k">Engineering, operations<br>and project delivery</div></div>
         <div class="tick"><div class="v">11<i>yrs</i></div><div class="k">O&amp;M and incident response<br>in a regulated utility</div></div>
-        <div class="tick"><div class="v">45<i>%</i></div><div class="k">Reduction in project<br>delivery defects</div></div>
-        <div class="tick"><div class="v">15<i>%</i></div><div class="k">Uplift in technical<br>service quality</div></div>
+        <div class="tick"><div class="v">45<i>%</i></div><div class="k">Fewer delivery defects at<br>IBEDC, via inspection gates</div></div>
+        <div class="tick"><div class="v">15<i>%</i></div><div class="k">Uplift in technical service<br>quality at IBEDC</div></div>
       </div>
     </div>
 
@@ -345,7 +359,7 @@ html { text-size-adjust: 100%; }
         <article class="project">
           <div class="pshot">
             <span class="idx">01</span>
-            <img src="/img/pole-substation-complete-t.webp" width="429" height="620" loading="lazy" decoding="async" alt="Completed pole-mounted substation with circuit breaker on a red steel stand">
+            <img class="wm-crop" src="/img/pole-substation-complete-t.webp" width="429" height="620" loading="lazy" decoding="async" alt="Completed pole-mounted substation with circuit breaker on a red steel stand">
           </div>
           <div class="pbody">
             <div class="kicker">Capital delivery</div>
@@ -443,7 +457,7 @@ html { text-size-adjust: 100%; }
   <div class="shell">
     <div class="sheet-head">
       <div class="plate-no">Sheet 02 — Field record</div>
-      <h1>The<br>field record</h1>
+      <h1 tabindex="-1">The<br>field record</h1>
       <p class="standfirst">Ten plates from the network: structures, plant, crews and the work in progress.</p>
       <p class="body">My own photographs, taken on site during installation, maintenance and fault work. Select any plate to open it full size.</p>
     </div>
@@ -453,7 +467,7 @@ html { text-size-adjust: 100%; }
         <h2>Plates 01—10</h2>
         <span class="note">Distribution network · Nigeria</span>
       </div>
-      <div class="grid" id="grid"><button class="plate" type="button" data-i="0" aria-label="Open plate 01: Steel lattice intermediate structure"><img src="/img/lattice-pole-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Steel lattice pole carrying overhead distribution conductors against a cloudy sky"><div class="cap"><div class="n">Plate 01</div><div class="t">Steel lattice intermediate structure</div><div class="d">A braced lattice pole carrying pin and strain insulators on an overhead distribution line, with stay-supported angle deviation on both approaches.</div></div></button><button class="plate" type="button" data-i="1" aria-label="Open plate 02: H-pole distribution substation"><img src="/img/h-pole-substation-t.webp" width="620" height="620" loading="lazy" decoding="async" alt="H-pole structure carrying drop-out fuses, disconnects and a pole-mounted transformer"><div class="cap"><div class="n">Plate 02</div><div class="t">H-pole distribution substation</div><div class="d">Drop-out fuses over disconnects over a pole-mounted transformer — the whole stepdown arrangement on one structure, which is how most of the network reaches its customers.</div></div></button><button class="plate" type="button" data-i="2" aria-label="Open plate 03: Outdoor breaker at an industrial intake"><img src="/img/breaker-gas-site-t.webp" width="620" height="465" loading="lazy" decoding="async" alt="Pole-mounted outdoor circuit breaker beside a high-pressure gas pipeline at an industrial site"><div class="cap"><div class="n">Plate 03</div><div class="t">Outdoor breaker at an industrial intake</div><div class="d">Pole-mounted circuit breaker and surge arresters serving an industrial site — the green line in the foreground is a high-pressure gas main, which sets the clearances and the permit conditions for any work here.</div></div></button><button class="plate" type="button" data-i="3" aria-label="Open plate 04: Conductor work from the roadside"><img src="/img/live-line-work-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Two workers using a red insulated telescopic pole on an overhead line beside a road"><div class="cap"><div class="n">Plate 04</div><div class="t">Conductor work from the roadside</div><div class="d">Crew working a conductor with an insulated telescopic pole beside a concrete H-pole. Traffic, stalls and a drainage ditch on one side; live conductors overhead — the reason site control is written down before anyone starts.</div></div></button><button class="plate" type="button" data-i="4" aria-label="Open plate 05: Set-up before the work starts"><img src="/img/field-team-earthing-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Field team with earthing equipment, cable and polymer insulators laid out at a roadside work site"><div class="cap"><div class="n">Plate 05</div><div class="t">Set-up before the work starts</div><div class="d">Earthing set, operating rod, cable and polymer insulators laid out on site. The unglamorous quarter-hour that decides whether the rest of the job is safe.</div></div></button><button class="plate" type="button" data-i="5" aria-label="Open plate 06: Three-phase breaker, phases marked"><img src="/img/vcb-three-phase-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Three-phase vacuum circuit breaker with red, green and yellow phase markers awaiting installation"><div class="cap"><div class="n">Plate 06</div><div class="t">Three-phase breaker, phases marked</div><div class="d">A vacuum circuit breaker with its A, B and C phase identity marked at the terminals and on the tank, checked before installation. Phase identity errors are cheap to prevent and expensive to find later.</div></div></button><button class="plate" type="button" data-i="6" aria-label="Open plate 07: Gang-operated switches on the ground"><img src="/img/insulator-assembly-t.webp" width="349" height="620" loading="lazy" decoding="async" alt="Gang-operated disconnect switches and polymeric insulators being assembled on the ground"><div class="cap"><div class="n">Plate 07</div><div class="t">Gang-operated switches on the ground</div><div class="d">Disconnect switches and polymeric insulators assembled and adjusted at ground level before they go up. Setting the linkage here rather than on the structure saves an hour of work at height.</div></div></button><button class="plate" type="button" data-i="7" aria-label="Open plate 08: New transformer on its plinth"><img src="/img/transformer-plinth-t.webp" width="429" height="620" loading="lazy" decoding="async" alt="New oil-immersed distribution transformer standing on a concrete plinth with structure work behind"><div class="cap"><div class="n">Plate 08</div><div class="t">New transformer on its plinth</div><div class="d">An oil-immersed distribution transformer set and levelled on its plinth with the conservator fitted, while the support structure and switching are erected behind it.</div></div></button><button class="plate" type="button" data-i="8" aria-label="Open plate 09: Substation ready for energisation"><img src="/img/pole-substation-complete-t.webp" width="429" height="620" loading="lazy" decoding="async" alt="Completed pole-mounted substation with a circuit breaker on a red steel stand and ladders in place"><div class="cap"><div class="n">Plate 09</div><div class="t">Substation ready for energisation</div><div class="d">Breaker on a fabricated steel stand, structure dressed, ladders still in place. The state a site should be in before the paperwork closes and the switching instruction goes out.</div></div></button><button class="plate" type="button" data-i="9" aria-label="Open plate 10: LV distribution panel and metering"><img src="/img/lv-panel-meters-t.webp" width="465" height="620" loading="lazy" decoding="async" alt="Interior of a low-voltage distribution panel showing copper busbars, phase-coloured links and two energy meters"><div class="cap"><div class="n">Plate 10</div><div class="t">LV distribution panel and metering</div><div class="d">Copper busbars, phase-coloured links and metering inside an LV distribution panel — where losses, revenue and load balance are all read off the same board.</div></div></button></div>
+      <div class="grid" id="grid"></div>
     </div>
   </div>
 </section>
@@ -463,7 +477,7 @@ html { text-size-adjust: 100%; }
   <div class="shell">
     <div class="sheet-head">
       <div class="plate-no">Sheet 03 — About</div>
-      <h1>Adeyemi<br>Adebanjo</h1>
+      <h1 tabindex="-1">Adeyemi<br>Adebanjo</h1>
       <p class="standfirst">Engineer by training, project manager by practice and now by qualification, and the person the control room called when a feeder went dark.</p>
     </div>
 
@@ -480,7 +494,7 @@ html { text-size-adjust: 100%; }
         </div>
         <div>
           <div class="sidebar">
-            <h3>Career</h3>
+            <h2>Career</h2>
             <ul class="tl">
               <li><span class="yr">2025—26</span><span class="rl"><b>MSc Project Management</b><span>Sheffield Hallam University, UK — completed</span></span></li>
               <li><span class="yr">2014—25</span><span class="rl"><b>O&amp;M Supervisor / Project Manager</b><span>Ibadan Electricity Distribution Company</span></span></li>
@@ -491,7 +505,7 @@ html { text-size-adjust: 100%; }
             </ul>
           </div>
           <div class="sidebar">
-            <h3>Education &amp; certification</h3>
+            <h2>Education &amp; certification</h2>
             <ul class="creds">
               <li><b>MSc Project Management</b> — Sheffield Hallam University, 2026</li>
               <li><b>BEng Civil Engineering</b> — University of Ilorin, 2001</li>
@@ -500,14 +514,14 @@ html { text-size-adjust: 100%; }
             </ul>
           </div>
           <div class="sidebar">
-            <h3>Professional membership</h3>
+            <h2>Professional membership</h2>
             <ul class="creds">
               <li><b>COREN</b> — Registered Engineer, Council for the Regulation of Engineering in Nigeria</li>
               <li><b>MNSE</b> — Corporate Member, Nigerian Society of Engineers</li>
             </ul>
           </div>
           <div class="sidebar">
-            <h3>Core competencies</h3>
+            <h2>Core competencies</h2>
             <ul class="creds">
               <li><b>Project</b> — delivery, PRINCE2, Agile, RAID governance, scope and change control, cost and schedule, project administration</li>
               <li><b>Operations</b> — PPM programmes, asset reliability, planned outages, permit to work, HSE compliance</li>
@@ -516,7 +530,7 @@ html { text-size-adjust: 100%; }
             </ul>
           </div>
           <div class="sidebar">
-            <h3>Toolkit</h3>
+            <h2>Toolkit</h2>
             <ul class="creds">
               <li>MS Project · Jira · Azure DevOps · Trello</li>
               <li>MS Visio · AutoCAD · Qlik Sense · Balsamiq</li>
@@ -535,7 +549,7 @@ html { text-size-adjust: 100%; }
   <div class="shell">
     <div class="sheet-head">
       <div class="plate-no">Sheet 04 — Contact</div>
-      <h1>Let's<br>talk work</h1>
+      <h1 tabindex="-1">Let's<br>talk work</h1>
       <p class="standfirst">Open to project management, operations and maintenance, and service delivery roles across UK utilities, infrastructure and IT-enabled change.</p>
     </div>
 
@@ -545,12 +559,12 @@ html { text-size-adjust: 100%; }
           <div class="rows">
             <div class="row">
               <div class="k">Email</div>
-              <div class="v" id="c-email">adebanjoade11@gmail.com</div>
+              <div class="v" id="c-email"><a href="mailto:adebanjoade11@gmail.com">adebanjoade11@gmail.com</a></div>
               <button class="mini" data-copy="c-email">Copy address</button>
             </div>
             <div class="row">
               <div class="k">Phone</div>
-              <div class="v" id="c-phone">+44 7933 377033</div>
+              <div class="v" id="c-phone"><a href="tel:+447933377033">+44 7933 377033</a></div>
               <button class="mini" data-copy="c-phone">Copy number</button>
             </div>
             <div class="row">
@@ -617,7 +631,7 @@ var PLATES = [
   {f:"transformer-plinth", w:429, h:620, t:"New transformer on its plinth",
    d:"An oil-immersed distribution transformer set and levelled on its plinth with the conservator fitted, while the support structure and switching are erected behind it.",
    alt:"New oil-immersed distribution transformer standing on a concrete plinth with structure work behind"},
-  {f:"pole-substation-complete", w:429, h:620, t:"Substation ready for energisation",
+  {f:"pole-substation-complete", w:429, h:620, crop:true, t:"Substation ready for energisation",
    d:"Breaker on a fabricated steel stand, structure dressed, ladders still in place. The state a site should be in before the paperwork closes and the switching instruction goes out.",
    alt:"Completed pole-mounted substation with a circuit breaker on a red steel stand and ladders in place"},
   {f:"lv-panel-meters", w:465, h:620, t:"LV distribution panel and metering",
@@ -637,7 +651,7 @@ var PLATES = [
     b.dataset.i = i;
     b.setAttribute('aria-label','Open plate ' + n + ': ' + p.t);
     b.innerHTML =
-      '<img src="img/'+p.f+'-t.webp" width="'+p.w+'" height="'+p.h+'" loading="lazy" decoding="async" alt="'+p.alt+'">' +
+      '<img'+(p.crop?' class="wm-crop"':'')+' src="img/'+p.f+'-t.webp" width="'+p.w+'" height="'+p.h+'" loading="lazy" decoding="async" alt="'+p.alt+'">' +
       '<div class="cap"><div class="n">Plate '+n+'</div><div class="t">'+p.t+'</div><div class="d">'+p.d+'</div></div>';
     grid.appendChild(b);
   });
@@ -665,6 +679,7 @@ function open(i){
   var p = PLATES[cur];
   lbImg.src = 'img/' + p.f + '.webp';
   lbImg.alt = p.alt;
+  lbImg.classList.toggle('wm-crop', !!p.crop);
   lbT.textContent = p.t;
   lbD.textContent = p.d;
   lbN.textContent = 'Plate ' + String(cur+1).padStart(2,'0') + ' / ' + String(PLATES.length).padStart(2,'0');
@@ -713,7 +728,12 @@ function route(){
   });
   if(!lb.hidden) close();
 }
-window.addEventListener('hashchange', function(){ route(); window.scrollTo(0,0); });
+window.addEventListener('hashchange', function(){
+  route();
+  window.scrollTo(0,0);
+  var heading = document.querySelector('.view.on h1');
+  if(heading) heading.focus({ preventScroll: true });
+});
 route();
 
 /* ---- copy buttons ---- */
